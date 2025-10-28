@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Shreya Tours & Travels</title>
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/css">
+    :root {
+        --primary-color: #d97706;
+        --secondary-color: #92400e;
+        --accent-color: #fbbf24;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background-color 300ms;
+        display: inline-block;
+        text-align: center;
+    }
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .btn-secondary {
+        background-color: #e5e7eb; /* gray-200 */
+        color: #1f2937;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background-color 200ms;
+        display: inline-block;
+    }
+    .btn-secondary:hover {
+        background-color: #d1d5db; /* gray-300 */
+    }
+
+    .btn-danger {
+        background-color: #dc2626; /* red-600 */
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: background-color 200ms;
+        display: inline-block;
+    }
+    .btn-danger:hover {
+        background-color: #b91c1c; /* red-700 */
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        box-sizing: border-box;
+        background: #fff;
+    }
+    .form-input:focus {
+        outline: none;
+        border-color: transparent;
+        box-shadow: 0 0 0 4px rgba(217,119,6,0.12);
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script>window.SHREYA_API_ENDPOINT = 'https://your-server.example.com/api'</script>
+    <script type="text/babel" src="components/admin/AdminHeader.js"></script>
+    <script type="text/babel" src="components/admin/ContactsList.js"></script>
+    <script type="text/babel" src="components/admin/DestinationsManager.js"></script>
+    <script type="text/babel" src="components/admin/VehiclesManager.js"></script>
+    <script type="text/babel" src="admin-app.js"></script>
+</body>
+</html>
